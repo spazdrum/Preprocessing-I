@@ -194,10 +194,12 @@ body {
 }
 .mid-section {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 .mid-section .intro {
+  display: flex;
+  flex-direction: column;
   width: 350px;
 }
 .mid-section .intro h2 {
@@ -210,6 +212,8 @@ body {
   line-height: 1.4;
 }
 .mid-section .stuff {
+  display: flex;
+  flex-direction: column;
   width: 350px;
 }
 .mid-section .stuff h3 {
@@ -220,4 +224,24 @@ body {
   border: 1px solid #919191;
   padding: 15px;
   font-size: 15px;
+}
+.history {
+  width: 100%;
+}
+.history table tr {
+  border-top: 1px solid #919191;
+}
+.history table tr:nth-child(even) {
+  padding: 20px;
+  background-color: #eeeeee;
+}
+.history table tr:nth-child(odd) {
+  padding: 20px;
+  background-color: #ffffff;
+}
+.history table th {
+  padding: 20px;
+  font-weight: bold;
+  dorber-tocolor: #000;
+  background-color: #ffffff;
 }
