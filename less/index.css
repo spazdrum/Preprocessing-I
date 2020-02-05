@@ -227,6 +227,7 @@ body {
 }
 .history {
   width: 100%;
+  padding-top: 20px;
 }
 .history table tr {
   border-top: 1px solid #919191;
@@ -242,6 +243,6 @@ body {
 .history table th {
   padding: 20px;
   font-weight: bold;
-  dorber-tocolor: #000;
+  border-top: 1px solid #919191 color #000;
   background-color: #ffffff;
 }
