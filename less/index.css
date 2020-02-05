@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -137,7 +137,7 @@ body {
 .container {
   width: 800px;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -193,9 +193,9 @@ body {
   background-color: #03b00c;
 }
 .mid-section {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+  display: inline-flex;
+  flex-direction: row;
+  width: 800px;
 }
 .mid-section .intro {
   display: flex;
@@ -211,38 +211,45 @@ body {
   font-size: 13px;
   line-height: 1.4;
 }
-.mid-section .stuff {
+.mid-section .good {
   display: flex;
   flex-direction: column;
   width: 350px;
 }
-.mid-section .stuff h3 {
+.mid-section .good h3 {
   font-size: 18px;
   font-weight: bold;
 }
-.mid-section .stuff li {
+.mid-section .good li {
   border: 1px solid #919191;
   padding: 15px;
   font-size: 15px;
 }
 .history {
-  width: 100%;
   padding-top: 20px;
+  text-align: center;
+  flex-direction: row;
+}
+.history table {
+  width: 800px;
+  margin-bottom: 20px;
 }
 .history table tr {
   border-top: 1px solid #919191;
 }
 .history table tr:nth-child(even) {
-  padding: 20px;
   background-color: #eeeeee;
 }
 .history table tr:nth-child(odd) {
-  padding: 20px;
   background-color: #ffffff;
 }
 .history table th {
   padding: 20px;
   font-weight: bold;
-  border-top: 1px solid #919191 color #000;
+  border-top: 1px solid #919191;
+  color: #000;
   background-color: #ffffff;
+}
+.history table td {
+  padding: 20px;
 }
