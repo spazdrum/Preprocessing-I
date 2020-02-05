@@ -137,12 +137,14 @@ body {
 .container {
   width: 800px;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 .container header {
   width: 100%;
   margin: 20px auto;
 }
 .container header nav {
+  display: flex;
   width: 75%;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -150,8 +152,47 @@ body {
   float: right;
 }
 .container header nav a {
-  margin-right: 65px;
   font-size: 14px;
   color: #000;
   text-decoration: none;
+}
+.container header nav a:last-child {
+  margin-right: 0;
+}
+.container .about {
+  background-color: #d8d8d8;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.container .about img {
+  height: 280px;
+  margin-bottom: 20px;
+}
+.container .about h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.container .about .slogan {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #919191;
+}
+.container .about p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container .about button {
+  background-color: #919191;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+}
+.container .about button:hover {
+  background-color: #03b00c;
+}
+.container .intro {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 }
